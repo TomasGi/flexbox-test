@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+    width: 90%;
+    margin: 5px auto;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+
+    section {
+        padding: 10px;
+        margin-bottom: 20px;
+        z-index: 1;
+        text-align: justify;
+    }
+}

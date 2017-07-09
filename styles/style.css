@@ -1,0 +1,116 @@
+* {
+  margin: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+nav {
+  background: #b9ff73;
+  border-radius: 5px; }
+  @media screen and (min-width: 768px) {
+    nav {
+      max-height: 41px; } }
+  nav ul {
+    list-style-type: none;
+    padding: 0; }
+    nav ul a {
+      text-decoration: none; }
+  @media screen and (min-width: 768px) {
+    nav .main-menu {
+      display: flex;
+      justify-content: center; } }
+  nav .main-menu li {
+    z-index: 900; }
+  nav .main-menu a {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: #626262;
+    font-size: 18px;
+    transition: 0.3s; }
+    nav .main-menu a:hover {
+      color: #fff;
+      background: #00691a; }
+  nav .main-menu .main-menu-sub {
+    width: 100%;
+    margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      nav .main-menu .main-menu-sub {
+        width: 80%; } }
+    nav .main-menu .main-menu-sub ul {
+      width: 100%;
+      z-index: 900; }
+    nav .main-menu .main-menu-sub li {
+      display: none; }
+  nav .main-menu li:hover > .main-menu-sub li {
+    display: block;
+    background: #786edf;
+    transform-origin: top;
+    opacity: 0; }
+    nav .main-menu li:hover > .main-menu-sub li:nth-child(1) {
+      animation-name: show-menu;
+      animation-duration: 300ms;
+      animation-delay: -150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    nav .main-menu li:hover > .main-menu-sub li:nth-child(2) {
+      animation-name: show-menu;
+      animation-duration: 300ms;
+      animation-delay: 0ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    nav .main-menu li:hover > .main-menu-sub li:nth-child(3) {
+      animation-name: show-menu;
+      animation-duration: 300ms;
+      animation-delay: 150ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    nav .main-menu li:hover > .main-menu-sub li:nth-child(4) {
+      animation-name: show-menu;
+      animation-duration: 300ms;
+      animation-delay: 300ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    nav .main-menu li:hover > .main-menu-sub li:nth-child(5) {
+      animation-name: show-menu;
+      animation-duration: 300ms;
+      animation-delay: 450ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+    nav .main-menu li:hover > .main-menu-sub li:nth-child(5) {
+      transform-origin: top right;
+      animation-name: last-menu;
+      animation-duration: 2000ms;
+      animation-direction: alternate;
+      animation-iteration-count: infinite; }
+
+@keyframes show-menu {
+  0% {
+    opacity: 0;
+    transform: rotate(-60deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg); } }
+@keyframes last-menu {
+  0% {
+    opacity: 1;
+    transform: rotate(-8deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(-90deg); } }
+.content {
+  display: flex;
+  width: 90%;
+  margin: 5px auto; }
+  @media screen and (max-width: 768px) {
+    .content {
+      display: block; } }
+  .content section {
+    padding: 10px;
+    margin-bottom: 20px;
+    z-index: 1;
+    text-align: justify; }
+
+/*# sourceMappingURL=style.css.map */
